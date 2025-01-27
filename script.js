@@ -68,20 +68,7 @@ const didYouKnowQuotes = [
   displayRandomQuote();
 
 
-hamburgerMenu.addEventListener("click", function() {
-    mobileMenu.classList.toggle('hidden');
-})
 
-x.addEventListener('click', function() {
-  mobileMenu.classList.toggle('hidden');
 
-})
-
-if (mobileMenu.classList.toggle("hidden")) {
-  video.removeAttribute("controls"); // Disable video controls
-} else {
-    mobileMenu.classList.add("hidden");
-    video.setAttribute("controls", ""); // Enable video controls again
-}
 
 
