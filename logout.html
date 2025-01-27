@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div
+      id="logoutDisplay"
+      class="flex-col overflow-hidden fixed inset-0 bg-gray-900 gap-y-10 text-2xl h-screen justify-center items-center flex bg-gradient-to-r from-black p-1"
+    >
+      <div id="backk" class="hover:text-pink-500 text-blue-500">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="48"
+          height="48"
+          viewBox="0 0 1024 1024"
+        >
+          <path
+            fill="currentColor"
+            d="M224 480h640a32 32 0 1 1 0 64H224a32 32 0 0 1 0-64"
+          />
+          <path
+            fill="currentColor"
+            d="m237.248 512l265.408 265.344a32 32 0 0 1-45.312 45.312l-288-288a32 32 0 0 1 0-45.312l288-288a32 32 0 1 1 45.312 45.312z"
+          />
+        </svg>
+      </div>
+
+      <p class="text-white">Are you sure you want to logout?</p>
+      <div class="flex gap-x-5">
+        <a
+          href="index.html"
+          class="bg-gradient-to-r text-white hover:text-gray-400 from-blue-600 to-pink-600 h-11 p-1 w-24 text-center justify-center items-center"
+          >Logout</a
+        >
+        <div
+          id="back"
+          class="bg-gradient-to-r w-24 text-white hover:text-gray-400 from-blue-600 to-pink-600 h-11 p-1 text-center justify-center items-center"
+        >
+          <button id="back">Stay</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const back = document.getElementById("back");
+      back.addEventListener("click", function () {
+        history.back();
+      });
+
+      const revert = document.getElementById("backk");
+      revert.addEventListener("click", function () {
+        history.back();
+      });
+    </script>
+  </body>
+</html>
