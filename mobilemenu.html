@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <section>
+      <div
+        id="mobileMenu"
+        class="flex-col scroll-m-0 overflow-hidden fixed scrollbar-hide inset-0 bg-gray-900 gap-y-10 text-2xl h-screen justify-center items-center sm:hidden flex bg-gradient-to-r from-black p-1"
+      >
+        <div>
+          <div
+            id="x"
+            class="top-0 place-self ml-[350px] text-pink-700 mb-10 hover:text-white"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="48"
+              height="48"
+              viewBox="0 0 40 40"
+            >
+              <path
+                fill="currentColor"
+                d="M21.499 19.994L32.755 8.727a1.064 1.064 0 0 0-.001-1.502c-.398-.396-1.099-.398-1.501.002L20 18.494L8.743 7.224c-.4-.395-1.101-.393-1.499.002a1.05 1.05 0 0 0-.309.751c0 .284.11.55.309.747L18.5 19.993L7.245 31.263a1.064 1.064 0 0 0 .003 1.503c.193.191.466.301.748.301h.006c.283-.001.556-.112.745-.305L20 21.495l11.257 11.27c.199.198.465.308.747.308a1.06 1.06 0 0 0 1.061-1.061c0-.283-.11-.55-.31-.747z"
+              />
+            </svg>
+          </div>
+
+          <a
+            href="signup.html"
+            class="hover:text-pink-400 ml-[162px] text-white"
+            >Signup</a
+          >
+        </div>
+        <div>
+          <a href="login.html" class="hover:text-pink-400 text-white">Login</a>
+        </div>
+        <div>
+          <a href="about.html" class="hover:text-pink-400 text-white">About</a>
+        </div>
+        <div>
+          <a href="help.html" class="hover:text-pink-400 text-white">Help</a>
+        </div>
+
+        <a href="contact.html" class="hover:text-pink-400 text-white"
+          >Contact us</a
+        >
+      </div>
+    </section>
+
+    <script>
+      x = document.getElementById("x");
+
+      x.addEventListener("click", function () {
+        history.back();
+      });
+    </script>
+  </body>
+</html>
