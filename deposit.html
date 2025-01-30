@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deposit Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://js.paystack.co/v1/inline.js"></script>
+</head>
+
+
+<div>
+    <button title="back" id="back" class="hover:text-pink-500 text-blue-500">
+      
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="48"
+          height="48"
+          viewBox="0 0 1024 1024"
+        >
+          <path
+            fill="currentColor"
+            d="M224 480h640a32 32 0 1 1 0 64H224a32 32 0 0 1 0-64"
+          />
+          <path
+            fill="currentColor"
+            d="m237.248 512l265.408 265.344a32 32 0 0 1-45.312 45.312l-288-288a32 32 0 0 1 0-45.312l288-288a32 32 0 1 1 45.312 45.312z"
+          />
+        </svg>
+      
+    </button>
+    
+<body class="bg-white container my-[100px] border w-[400px] font-bold shadow-2xl text-gray-600 mx-auto p-5 h-[460px] 2xl:h-[400px] items-center justify-center  m-6">
+    
+<h1 class="font-extrabold text-2xl text-gray-600 text-center mb-4">Deposit Funds</h1>
+
+</div>
+<div>
+<p class="mb-1">Select Payment Method</p>
+<select name="" title="payment" id="" class="mb-4 font-light w-[350px] h-11 pl-2">
+<option value="" selected>NGN Bank Transfer</option>
+</select>
+</div>
+
+<div class="flex gap-x-2 2xl:mt-7 ">
+<p class="">Deposit Amount 
+    <div ><select title="amount" class="h-8 text-white bg-blue-600" name="" id="currency">
+<option value="" selected>NGN - Nigerian Naira</option>
+    </select>
+  </div>   
+
+</div>
+</p>
+<form>
+<div class=" border-gray-600 mt-1 ">
+<input required id="depositMe" class="w-[350px] border h-11 pl-2 mb-2" type="text" placeholder="0.00">
+
+</div>
+<p>Contact <a class="text-blue-600" href="contact.html">our agencies</a> if you wish to deposit with a different currency other than Naira <a class="text-blue-600" target="_blank" href="https://en.wikipedia.org/wiki/Nigerian_naira">(NGN)</a></p>
+
+<div class="bg-blue-600 rounded-3xl 2xl:mt-11 mt-5 pt-2 h-11 w-[100px] text-white items-center justify-center text-center mx-auto">
+<button id="deposit" type="submit" class="">Deposit</button>
+</div></form>
+<p></p>
+</div>
+
+
+
+<script src="deposit.js">
+    
+  </script>
+</body>
+</html>

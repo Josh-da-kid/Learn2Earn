@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profile - Learn and Earn Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="max-w-md w-full bg-white p-6 rounded-lg shadow-lg">
+      <button title="back" id="back" class="hover:text-pink-500 text-blue-500">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="48"
+          height="48"
+          viewBox="0 0 1024 1024"
+        >
+          <path
+            fill="currentColor"
+            d="M224 480h640a32 32 0 1 1 0 64H224a32 32 0 0 1 0-64"
+          />
+          <path
+            fill="currentColor"
+            d="m237.248 512l265.408 265.344a32 32 0 0 1-45.312 45.312l-288-288a32 32 0 0 1 0-45.312l288-288a32 32 0 1 1 45.312 45.312z"
+          />
+        </svg>
+      </button>
+
+      <div class="flex flex-col items-center">
+        <label for="profile-pic" class="cursor-pointer">
+          <img
+            title="profile pic"
+            id="profile-pic-preview"
+            src="user (1).png"
+            class="w-24 h-24 rounded-full border-2 border-gray-300 shadow-md object-cover"
+          />
+          <input type="file" id="profile-pic" class="hidden" accept="image/*" />
+        </label>
+        <input
+          type="text"
+          id="username"
+          class="mt-3 text-xl font-semibold text-gray-800 border rounded p-1 text-center"
+          placeholder="Enter your username"
+        />
+      </div>
+
+      <div class="mt-6">
+        <p class="text-lg font-semibold">Email:</p>
+        <p id="email" class="text-gray-700">Loading...</p>
+      </div>
+
+      <div class="mt-4">
+        <p class="text-lg font-semibold">Quizzes Taken:</p>
+        <p id="quizzes" class="text-gray-700">0</p>
+      </div>
+
+      <div class="mt-4">
+        <p class="text-lg font-semibold">Account Balance:</p>
+        <p id="balance" class="text-green-600 font-bold">$0.00</p>
+      </div>
+
+      <div class="mt-4">
+        <p class="text-lg font-semibold">Total Earnings:</p>
+        <p id="earnings" class="text-green-600 font-bold">$0.00</p>
+      </div>
+
+      <button
+        id="save-profile"
+        class="mt-6 w-full bg-blue-600 text-white py-2 rounded-lg shadow-md hover:bg-blue-700 transition"
+      >
+        Save Changes
+      </button>
+    </div>
+
+    <script type="module" src="profile.js"></script>
+  </body>
+</html>
